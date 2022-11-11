@@ -4,25 +4,19 @@ import Menu from "../components/Menu";
 import Timeline from "../components/Timeline";
 
 import config from "../../config.json";
-import { CSSReset } from "../components/CSSReset";
 
 function HomePage() {
-  const [valorDoFiltro, setValorDoFiltro] = useState("Angular");
+  const [valorDoFiltro, setValorDoFiltro] = useState("");
 
   return (
     <>
-      <CSSReset />
-
       <div>
         <Menu
           valorDoFiltro={valorDoFiltro}
           setValorDoFiltro={setValorDoFiltro}
-        ></Menu>
-        <Header></Header>
-        <Timeline
-          playlists={config.playlists}
-          searchValue={valorDoFiltro}
-        ></Timeline>
+        />
+        <Header />
+        <Timeline playlists={config.playlists} searchValue={valorDoFiltro} />
       </div>
     </>
   );

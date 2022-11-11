@@ -12,7 +12,6 @@ export default function Search({ valorDoFiltro, setValorDoFiltro }) {
         value={valorDaBusca}
         type="text"
         onChange={(e) => {
-          console.log("teste");
           setValorBusca(e.target.value);
         }}
       />

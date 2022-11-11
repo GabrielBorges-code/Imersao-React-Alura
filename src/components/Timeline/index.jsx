@@ -1,7 +1,5 @@
 import React from "react";
 
-import Search from "../Menu/components/Search";
-
 import { StyledTimeline } from "./styles";
 
 function Timeline({ searchValue, playlists, ...props }) {
@@ -12,7 +10,6 @@ function Timeline({ searchValue, playlists, ...props }) {
     <StyledTimeline>
       {playlistNames.map((playlistName) => {
         const videos = playlists[playlistName];
-        // console.log(videos);
         return (
           <section key={playlistName}>
             <h2>{playlistName}</h2>

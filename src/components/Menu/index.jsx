@@ -1,4 +1,5 @@
 import React from "react";
+import DarkModeSwitch from "./components/DarkModeSwitch";
 import Search from "./components/Search";
 
 import { StyledMenu } from "./styles";
@@ -13,6 +14,7 @@ export default function Menu({ valorDoFiltro, setValorDoFiltro }) {
         valorDoFiltro={valorDoFiltro}
         setValorDoFiltro={setValorDoFiltro}
       />
+      <DarkModeSwitch/>
     </StyledMenu>
   );
 }
