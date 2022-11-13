@@ -9,6 +9,7 @@ Imersão React da Alura número 5.
 * Next
 * Styled Components
 * Vercel
+* Supabase
 
 ## 🖥️ Para executar o projeto localmente
 
